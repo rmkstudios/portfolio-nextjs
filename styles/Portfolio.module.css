@@ -1,0 +1,84 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.card {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.194);
+  font-size: 0.9rem;
+  overflow: hidden;
+}
+.gradient {
+  /* 
+  background: linear-gradient(
+    180deg,
+    rgb(216, 247, 251) 0%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  */
+}
+.logo {
+  margin: 30px 30px 20px 30px;
+}
+.tags {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.tags div {
+  border: 0px;
+  padding: 5px 8px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.tags div .icon {
+  padding-top: 2px;
+}
+.description {
+  padding: 20px;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+}
+.aboutButton {
+  text-align: center;
+  background-color: #edf3f6;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.aboutButton:hover {
+  background-color: #e2e9ec;
+  cursor: pointer;
+}
+.bottomButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.bottomButtons a {
+  background-color: #edf3f6;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.bottomButtons a:hover {
+  background-color: #e2e9ec;
+  cursor: pointer;
+}
+.bottomButtons a:visited {
+  color: inherit;
+}
+.icon {
+  position: relative;
+  top: 1px;
+  margin-right: 4px;
+}
