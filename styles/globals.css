@@ -6,12 +6,29 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
   color: rgb(88, 88, 88);
+  scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
 }
-
-h2 {
+h1 {
+  padding: 0px;
+  margin: 0px;
+  font-weight: 400;
   font-size: 1.5rem;
+}
+h2 {
+  padding: 0px;
+  margin: 25px 0 10px 0;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+::selection {
+  background: #2d7161;
+  color: #fff;
+}
+::-moz-selection {
+  background: #2d7161;
+  color: #fff;
 }

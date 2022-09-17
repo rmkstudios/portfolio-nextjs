@@ -1,5 +1,5 @@
 import mainstyles from "../styles/Main.module.css";
-import styles from "../styles/Portfolio.module.css";
+import styles from "../styles/Projects.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import Logo1 from "../public/logo-weirdalerts.png";
@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 import { SiFirebase } from "react-icons/si";
 
-const Portfolio = () => {
+const Projects = () => {
   return (
     <>
       <div className={mainstyles.wrapper}>
@@ -23,7 +23,9 @@ const Portfolio = () => {
           <div className={styles.card}>
             <div className={styles.gradient}>
               <div className={styles.logo}>
-                <Image src={Logo1} alt="Weird Alerts" />
+                <Link href="./projects/weird-alerts">
+                  <Image src={Logo1} alt="Weird Alerts" />
+                </Link>
               </div>
             </div>
             <div className={styles.tags}>
@@ -34,7 +36,9 @@ const Portfolio = () => {
                 <FaRegClone className={styles.icon} /> API Integration
               </div>
             </div>
-            <div className={styles.aboutButton}>About The Project</div>
+            <Link href="./projects/weird-alerts">
+              <div className={styles.aboutButton}>About The Project</div>
+            </Link>
             <div className={styles.bottomButtons}>
               <Link href="https://github.com/rmkstudios/weird-alerts">
                 <a target="_blank">
@@ -51,7 +55,9 @@ const Portfolio = () => {
           <div className={styles.card}>
             <div className={styles.gradient}>
               <div className={styles.logo}>
-                <Image src={Logo2} alt="The Company of House Plants" />
+                <Link href="./projects/the-company-of-house-plants">
+                  <Image src={Logo2} alt="The Company of House Plants" />
+                </Link>
               </div>
             </div>
             <div className={styles.tags}>
@@ -62,7 +68,9 @@ const Portfolio = () => {
                 <FaGripVertical className={styles.icon} /> Local JSON
               </div>
             </div>
-            <div className={styles.aboutButton}>About The Project</div>
+            <Link href="./projects/the-company-of-house-plants">
+              <div className={styles.aboutButton}>About The Project</div>
+            </Link>
             <div className={styles.bottomButtons}>
               <Link href="https://github.com/rmkstudios/the-company-of-house-plants">
                 <a target="_blank">
@@ -79,7 +87,9 @@ const Portfolio = () => {
           <div className={styles.card}>
             <div className={styles.gradient}>
               <div className={styles.logo}>
-                <Image src={Logo3} alt="Simple PR Tracker" />
+                <Link href="./projects/simple-pr-tracker">
+                  <Image src={Logo3} alt="Simple PR Tracker" />
+                </Link>
               </div>
             </div>
             <div className={styles.tags}>
@@ -90,7 +100,9 @@ const Portfolio = () => {
                 <SiFirebase className={styles.icon} /> Firebase
               </div>
             </div>
-            <div className={styles.aboutButton}>About The Project</div>
+            <Link href="./projects/simple-pr-tracker">
+              <div className={styles.aboutButton}>About The Project</div>
+            </Link>
             <div className={styles.bottomButtons}>
               <Link href="https://github.com/rmkstudios/simple-pr-tracker">
                 <a target="_blank">
@@ -110,4 +122,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

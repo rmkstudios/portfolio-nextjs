@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Profile from "../components/Profile";
-import Portfolio from "../components/Portfolio";
+import Projects from "../components/Projects";
 import CaseStudies from "../components/CaseStudies";
 import Contact from "../components/Contact";
 
@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <main>
         <Profile />
-        <Portfolio />
+        <Projects />
         <CaseStudies />
         <Contact />
       </main>

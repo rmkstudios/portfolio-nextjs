@@ -11,14 +11,20 @@ const Profile = () => {
           <Image src={Me} alt="Ryan Krysiak" />
         </div>
         <div className={styles.calloutText}>
-          <span className={styles.highlight}>Frontend Developer.</span> <br />
-          10 years of digital
-          <br /> marketing experience.
-          <div className={styles.tags}>
-            HTML, CSS, Javascript, ReactJS, NextJS, Typescript, Sass, Wordpress,
-            Bootstrap, Figma, Storybook
+          <div>
+            <span className={styles.highlight}>Frontend Developer.</span> <br />
+            10 years of digital
+            <br /> marketing experience.
+            <div className={styles.tags}>
+              HTML, CSS, Javascript, ReactJS, NextJS, Typescript, Sass,
+              Wordpress, Bootstrap, Figma, Storybook
+            </div>
           </div>
         </div>
+      </div>
+      <div className={styles.tagsMobile}>
+        HTML, CSS, Javascript, ReactJS, NextJS, Typescript, Sass, Wordpress,
+        Bootstrap, Figma, Storybook
       </div>
     </div>
   );

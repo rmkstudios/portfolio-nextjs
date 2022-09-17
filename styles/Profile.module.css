@@ -14,14 +14,70 @@
   font-size: 2.3rem;
   font-weight: 700;
   color: #fff;
-  padding-top: 70px;
+  display: grid;
+  align-items: center;
 }
 .tags {
   font-size: 1rem;
-  color: #5e8954;
+  color: #8f9cc4;
+}
+.tagsMobile {
+  display: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #8f9cc4;
+  margin-top: 10px;
 }
 .highlight {
   margin: 0;
   padding: 0 7px;
   background-color: #2d7161;
+}
+
+/* Mobile Responsive CSS */
+@media only screen and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .photo {
+    max-width: 150px;
+  }
+  .calloutText {
+    font-size: 1.7rem;
+  }
+  .tags {
+    font-size: 0.7rem;
+    color: #8f9cc4;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .profile {
+    gap: 15px;
+  }
+  .photo {
+    max-width: 100px;
+  }
+  .calloutText {
+    font-size: 5vw;
+  }
+  .tags {
+    display: none;
+  }
+  .tagsMobile {
+    display: block;
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .photo {
+    display: none;
+  }
+  .calloutText {
+    font-size: 7vw;
+  }
+  .tagsMobile {
+    font-size: 4vw;
+  }
 }

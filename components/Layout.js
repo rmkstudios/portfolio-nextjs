@@ -1,5 +1,6 @@
-import Header from "./Header.js";
 import GreenCurve from "./GreenCurve.js";
+import Header from "./Header.js";
+import Footer from "./Footer.js";
 
 const Layout = ({ children }) => {
   return (
@@ -7,6 +8,7 @@ const Layout = ({ children }) => {
       <GreenCurve />
       <Header />
       <div>{children}</div>
+      <Footer />
     </>
   );
 };

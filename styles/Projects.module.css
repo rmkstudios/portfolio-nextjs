@@ -12,17 +12,13 @@
   font-size: 0.9rem;
   overflow: hidden;
 }
-.gradient {
-  /* 
-  background: linear-gradient(
-    180deg,
-    rgb(216, 247, 251) 0%,
-    rgba(0, 212, 255, 0) 100%
-  );
-  */
-}
 .logo {
   margin: 30px 30px 20px 30px;
+  cursor: pointer;
+  transition: margin 0.2s;
+}
+.logo:hover {
+  margin: 28px 30px 22px 30px;
 }
 .tags {
   text-align: center;
@@ -81,4 +77,16 @@
   position: relative;
   top: 1px;
   margin-right: 4px;
+}
+
+/* Mobile Responsive CSS */
+@media only screen and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .logo {
+    margin: 30px 30px 20px 30px;
+    cursor: pointer;
+    transition: margin 0.2s;
+  }
 }

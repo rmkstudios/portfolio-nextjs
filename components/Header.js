@@ -8,21 +8,25 @@ const Header = () => {
     <>
       <div className={mainstyles.wrapper}>
         <div className={styles.header}>
-          <div className={styles.logo}>
-            <div className={styles.name}>Ryan Krysiak</div>
-            <div className={styles.tagline}>
-              Frontend Developer & UX Designer
-            </div>
-          </div>
+          <Link href="/">
+            <a className={styles.logo}>
+              <div className={styles.name}>Ryan Krysiak</div>
+              <div className={styles.tagline}>
+                Frontend Developer & UX Designer
+              </div>
+            </a>
+          </Link>
           <div className={styles.menu}>
             <Link href="https://www.linkedin.com/in/ryan-krysiak/">
               <a className={styles.menuItem} target="_blank">
-                <FaLinkedin className={styles.icon} /> LinkedIn
+                <FaLinkedin className={styles.icon} />
+                <span className={styles.mobileHidden}> LinkedIn</span>
               </a>
             </Link>
-            <Link href="#">
-              <a className={styles.menuItem} target="_blank">
-                <FaRegFileAlt className={styles.icon} /> Resume / CV
+            <Link href="/resume.pdf">
+              <a className={styles.menuHighlight} target="_blank">
+                <FaRegFileAlt className={styles.icon} />
+                <span className={styles.mobileHidden}> Resume / CV</span>
               </a>
             </Link>
           </div>
