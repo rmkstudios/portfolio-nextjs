@@ -33,6 +33,12 @@
   padding: 0 7px;
   background-color: #2d7161;
 }
+.star {
+  display: inline-block;
+  width: 30px;
+  position: relative;
+  right: -10px;
+}
 
 /* Mobile Responsive CSS */
 @media only screen and (max-width: 750px) {
@@ -49,9 +55,13 @@
     font-size: 0.7rem;
     color: #8f9cc4;
   }
+  .star {
+    width: 25px;
+    top: 2px;
+  }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 555px) {
   .profile {
     gap: 15px;
   }
@@ -68,6 +78,10 @@
     display: block;
     font-size: 3vw;
   }
+  .star {
+    width: 4vw;
+    top: 0px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -79,5 +93,9 @@
   }
   .tagsMobile {
     font-size: 4vw;
+  }
+  .star {
+    width: 5vw;
+    top: 0px;
   }
 }

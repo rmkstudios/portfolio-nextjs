@@ -2,6 +2,8 @@ import mainstyles from "../styles/Main.module.css";
 import styles from "../styles/Posts.module.css";
 import Head from "next/head";
 import BackToPortfolio from "../components/BackToPortfolio";
+import Image from "next/image";
+import Thumbnail from "/public/thumbnail-social-media.png";
 
 const CaseStudy1 = () => {
   return (
@@ -21,6 +23,9 @@ const CaseStudy1 = () => {
         <div className={styles.whiteBackground}>
           <h1>Maximizing Social Engagement: Case Study #1</h1>
           <div className={styles.tagline}>From 0 to 200,000 in 6 months</div>
+          <div className={styles.thumbnail}>
+            <Image src={Thumbnail} alt="Social Media Case Study" />
+          </div>
           <div className={styles.content}>
             <p>
               After finding success in SEO, I wanted to expand my skillset of

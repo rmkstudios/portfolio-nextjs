@@ -11,7 +11,7 @@ const PageNotFound = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>Uh oh, this page doesn't exist!</div>
+      <div>Uh oh, this page doesn&apos;t exist!</div>
     </>
   );
 };

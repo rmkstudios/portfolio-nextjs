@@ -4,6 +4,8 @@ import Head from "next/head";
 import BackToPortfolio from "../../components/BackToPortfolio";
 import Link from "next/link";
 import { FaShare, FaGithub } from "react-icons/fa";
+import Image from "next/image";
+import Thumbnail from "/public/thumbnail-house-plants.png";
 
 const TheCompanyOfHousePlants = () => {
   return (
@@ -32,10 +34,13 @@ const TheCompanyOfHousePlants = () => {
                 </a>
               </Link>
               <Link href="https://houseplants.backedbyryan.com/">
-                <a target="_blank">
+                <a className={styles.visit} target="_blank">
                   <FaShare className={styles.icon} /> Visit The Site
                 </a>
               </Link>
+            </div>
+            <div className={styles.thumbnail}>
+              <Image src={Thumbnail} alt="The Company of House Plants" />
             </div>
             <h2>Development Specs</h2>
             <ul>

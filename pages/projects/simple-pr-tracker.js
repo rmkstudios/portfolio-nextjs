@@ -4,6 +4,8 @@ import Head from "next/head";
 import BackToPortfolio from "../../components/BackToPortfolio";
 import Link from "next/link";
 import { FaShare, FaGithub } from "react-icons/fa";
+import Image from "next/image";
+import Thumbnail from "/public/thumbnail-pr-tracker.png";
 
 const SimplePrTracker = () => {
   return (
@@ -30,10 +32,13 @@ const SimplePrTracker = () => {
                 </a>
               </Link>
               <Link href="https://simpleprtracker.backedbyryan.com/">
-                <a target="_blank">
+                <a className={styles.visit} target="_blank">
                   <FaShare className={styles.icon} /> Visit The Site
                 </a>
               </Link>
+            </div>
+            <div className={styles.thumbnail}>
+              <Image src={Thumbnail} alt="Simple PR Tracker" />
             </div>
             <h2>Development Specs</h2>
             <ul>
@@ -52,8 +57,8 @@ const SimplePrTracker = () => {
               <li>
                 For a good UX, simplicity is key. I wanted the entire site to
                 function on a single page. And the green/orange colors were used
-                sparingly to draw the user's attention to the most important
-                action elements of the page.
+                sparingly to draw the user&apos;s attention to the most
+                important action elements of the page.
               </li>
               <li>
                 Mobile Responsiveness was extra important on this project
@@ -71,8 +76,8 @@ const SimplePrTracker = () => {
               <li>
                 Despite not having open registration, there still is
                 multiple-user access. Learning how to filter through firebase
-                data and work with a single user's data was important to figure
-                out for this project.
+                data and work with a single user&apos;s data was important to
+                figure out for this project.
               </li>
             </ul>
             <h2>Future Improvements</h2>
@@ -84,10 +89,10 @@ const SimplePrTracker = () => {
                 through their current workouts on firebase.
               </li>
               <li>
-                I didn't include a new account signup feature in the current
-                build due to it not being a public app. If I were to open it up
-                to the public, that would be the next important implementation
-                (and fairly straightforward through firebase).
+                I didn&apos;t include a new account signup feature in the
+                current build due to it not being a public app. If I were to
+                open it up to the public, that would be the next important
+                implementation (and fairly straightforward through firebase).
               </li>
             </ul>
             <BackToPortfolio />

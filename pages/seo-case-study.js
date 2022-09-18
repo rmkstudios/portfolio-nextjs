@@ -2,6 +2,8 @@ import mainstyles from "../styles/Main.module.css";
 import styles from "../styles/Posts.module.css";
 import Head from "next/head";
 import BackToPortfolio from "../components/BackToPortfolio";
+import Image from "next/image";
+import Thumbnail from "/public/thumbnail-seo.png";
 
 const CaseStudy1 = () => {
   return (
@@ -20,23 +22,27 @@ const CaseStudy1 = () => {
         <div className={styles.whiteBackground}>
           <h1>Maximizing Organic Search Traffic: Case Study #2</h1>
           <div className={styles.tagline}>
-            Becoming one of HostGator's top affiliates through organic search
-            traffic
+            Becoming one of HostGator&apos;s top affiliates through organic
+            search traffic
+          </div>
+          <div className={styles.thumbnail}>
+            <Image src={Thumbnail} alt="SEO Case Study" />
           </div>
           <div className={styles.content}>
             <p>
               I started my career as a freelance web designer. But after several
               years, I began expanding my skillset into digital marketing and
               quickly developed an affinity for SEO and that lead to becoming
-              one of HostGator's top affiliates in 2015. Let's dig into the
-              fundamentals of SEO strategy and how the space has changed!
+              one of HostGator&apos;s top affiliates in 2015. Let&apos;s dig
+              into the fundamentals of SEO strategy and how the space has
+              changed!
             </p>
             <h2>Understanding Google SEO</h2>
             <p>
               While optimization tactics change a lot over time, the
               fundamentals have always remained constant. Ranking on Google is
               all about trust and endorsement (often through link building).
-              Let's understand this through a simple analogy.
+              Let&apos;s understand this through a simple analogy.
             </p>
             <ul>
               <li>
@@ -55,20 +61,21 @@ const CaseStudy1 = () => {
                 Additionally, one highly trustworthy endorsement is worth more
                 than 100 semi-trustworthy endorsements.
                 <br />
-                This is essentially the concept of "backlinks" in SEO.
+                This is essentially the concept of &lsquo;backlinks&lsquo; in
+                SEO.
               </li>
               <li>
-                When you launch a brand new site, it is like you're that brand
-                new enrolled student.
+                When you launch a brand new site, it is like you&apos;re that
+                brand new enrolled student.
                 <br />
-                Google doesn't know if they can trust you or not, so they begin
-                to wait for endorsements.
+                Google doesn&apos;t know if they can trust you or not, so they
+                begin to wait for endorsements.
                 <br />
                 If a bunch of sites that Google already trusts begin linking to
-                your site, your trust goes up in Google's eyes and they increase
-                your rankings. This is a simplification of the concept, but now
-                you understand the fundamentals of how Google creates their
-                search rankings.
+                your site, your trust goes up in Google&apos;s eyes and they
+                increase your rankings. This is a simplification of the concept,
+                but now you understand the fundamentals of how Google creates
+                their search rankings.
               </li>
             </ul>
             <h2>Understanding YouTube SEO</h2>
@@ -86,8 +93,8 @@ const CaseStudy1 = () => {
               <li>High CTR + High WT = Massive Green Flag</li>
             </ul>
             <p>
-              This is why it's very important that you work on improving your
-              watch time prior to working on your click-through rate.
+              This is why it&apos;s very important that you work on improving
+              your watch time prior to working on your click-through rate.
             </p>
             <h2>My Implementation</h2>
             <p>
@@ -98,12 +105,12 @@ const CaseStudy1 = () => {
             </p>
             <ul>
               <li>
-                Google Strategy: The goal was to rank for as many "retailer
-                promo code" / "retailer coupon" searches as possible. But
-                traffic was only really aquired if you were in the top 3 search
-                results. I A/B tested hundreds of backlink strategies on
-                external sites and used the ones that worked best on the actual
-                site.
+                Google Strategy: The goal was to rank for as many
+                &ldquo;retailer promo code&ldquo; / &ldquo;retailer
+                coupon&ldquo; searches as possible. But traffic was only really
+                aquired if you were in the top 3 search results. I A/B tested
+                hundreds of backlink strategies on external sites and used the
+                ones that worked best on the actual site.
               </li>
               <li>
                 YouTube Strategy: I recognized the coupon site as part of a
@@ -112,9 +119,10 @@ const CaseStudy1 = () => {
                 result, anyone who used the tutorial would get the coupon code
                 from my website and I would grab an affiliate commission for
                 that sale. For several years, I was ranked #1 for huge search
-                terms like "How To Create a Website". These videos performed
-                very well at the time and I became one of HostGator's top
-                affiliates - earning over $500,000 in a single year.
+                terms like &ldquo;How To Create a Website&ldquo;. These videos
+                performed very well at the time and I became one of
+                HostGator&apos;s top affiliates - earning over $500,000 in a
+                single year.
               </li>
             </ul>
             <h2>How do we use this information?</h2>
@@ -131,20 +139,20 @@ const CaseStudy1 = () => {
               </li>
               <li>
                 Gray/Black Hat SEO is when you attempt to game the system. These
-                tactics work well in the short term but definitely don't last in
-                the long term.
+                tactics work well in the short term but definitely don&apos;t
+                last in the long term.
               </li>
             </ul>
             <h2>Lessons Learned</h2>
             <p>
-              A lot of the success from this site came from gamifying Google's
-              algorithm. While that worked extraordinarily well for a while, it
-              was not a viable long-term strategy. Google's algorithm changed
-              and so did the site's rankings. This is a tale as old as time with
-              SEO tactics. As an arbitrage, it was wildly successful. But going
-              forward, it taught me to respect the massive value of the long
-              game when it comes to SEO. A firecracker lights up fast, but goes
-              out just the same.
+              A lot of the success from this site came from gamifying
+              Google&apos;s algorithm. While that worked extraordinarily well
+              for a while, it was not a viable long-term strategy. Google&apos;s
+              algorithm changed and so did the site&apos;s rankings. This is a
+              tale as old as time with SEO tactics. As an arbitrage, it was
+              wildly successful. But going forward, it taught me to respect the
+              massive value of the long game when it comes to SEO. A firecracker
+              lights up fast, but goes out just the same.
             </p>
             <BackToPortfolio />
           </div>

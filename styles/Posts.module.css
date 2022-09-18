@@ -59,3 +59,9 @@
 .backText {
   margin-left: 5px;
 }
+.thumbnail {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+  opacity: 80%;
+}

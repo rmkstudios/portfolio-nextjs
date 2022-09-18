@@ -31,8 +31,8 @@ const CaseStudies = () => {
               alt="Maximizing Organic Search Traffic"
             />
             <div className={styles.title}>
-              Becoming one of Host Gator's top affiliates through organic search
-              traffic
+              Becoming one of Host Gator&apos;s top affiliates through organic
+              search traffic
             </div>
           </div>
         </Link>

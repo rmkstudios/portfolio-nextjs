@@ -78,6 +78,13 @@
   top: 1px;
   margin-right: 4px;
 }
+.arrow {
+  display: inline-block;
+  width: 18px;
+  position: relative;
+  top: 2px;
+  right: -1;
+}
 
 /* Mobile Responsive CSS */
 @media only screen and (max-width: 750px) {
@@ -85,8 +92,17 @@
     grid-template-columns: 1fr;
   }
   .logo {
-    margin: 30px 30px 20px 30px;
-    cursor: pointer;
-    transition: margin 0.2s;
+    max-width: 250px;
+    margin: 30px auto 20px auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .logo {
+    width: 50vw;
+    margin: 30px auto 20px auto;
   }
 }

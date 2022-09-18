@@ -5,6 +5,7 @@ import Image from "next/image";
 import Logo1 from "../public/logo-weirdalerts.png";
 import Logo2 from "../public/logo-thecompanyofhouseplants.png";
 import Logo3 from "../public/logo-simpleprtracker.png";
+import Arrow from "../public/arrow.png";
 import {
   FaShare,
   FaGithub,
@@ -18,15 +19,20 @@ const Projects = () => {
   return (
     <>
       <div className={mainstyles.wrapper}>
-        <h2 className={mainstyles.white}>Featured Projects</h2>
+        <h2 className={mainstyles.white}>
+          Featured Projects{" "}
+          <span className={styles.arrow}>
+            <Image src={Arrow} alt="Arrow" />
+          </span>
+        </h2>
         <div className={styles.grid}>
           <div className={styles.card}>
             <div className={styles.gradient}>
-              <div className={styles.logo}>
-                <Link href="./projects/weird-alerts">
+              <Link href="./projects/weird-alerts">
+                <div className={styles.logo}>
                   <Image src={Logo1} alt="Weird Alerts" />
-                </Link>
-              </div>
+                </div>
+              </Link>
             </div>
             <div className={styles.tags}>
               <div>

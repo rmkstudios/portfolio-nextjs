@@ -48,17 +48,19 @@ const Contact = () => {
     <div className={mainstyles.wrapper}>
       <div className={styles.card}>
         <h2>Reach Out And Say Hello!</h2>
-        <Image src={Turtle} className={styles.turtle} />
+        <div className={styles.turtle}>
+          <Image src={Turtle} alt="Mail Turtle" />
+        </div>
         <form className={styles.form} onSubmit={sendEmail}>
           {loading ? (
             <div>
-              <Image src={Spinner} width={30} height={30} />
+              <Image src={Spinner} width={30} height={30} alt="Loading.." />
             </div>
           ) : (
             <>
               {emailSent ? (
                 <div className={styles.success}>
-                  Email Sent! I'll get back to you shortly!
+                  Email Sent! I&apos;ll get back to you shortly!
                 </div>
               ) : (
                 <>

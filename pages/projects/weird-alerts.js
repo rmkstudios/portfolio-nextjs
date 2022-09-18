@@ -4,6 +4,8 @@ import Head from "next/head";
 import { FaShare, FaGithub } from "react-icons/fa";
 import BackToPortfolio from "../../components/BackToPortfolio";
 import Link from "next/link";
+import Image from "next/image";
+import Thumbnail from "/public/thumbnail-weird-alerts.png";
 
 const WeirdAlerts = () => {
   return (
@@ -20,8 +22,8 @@ const WeirdAlerts = () => {
         <div className={styles.whiteBackground}>
           <h1>Weird Alerts: About The Development</h1>
           <div className={styles.tagline}>
-            A real-time crypto currency tracker that doesn't overwhelm you with
-            data!
+            A real-time crypto currency tracker that doesn&apos;t overwhelm you
+            with data!
           </div>
           <div className={styles.content}>
             <div className={styles.buttons}>
@@ -35,6 +37,9 @@ const WeirdAlerts = () => {
                   <FaShare className={styles.icon} /> Visit The Site
                 </a>
               </Link>
+            </div>
+            <div className={styles.thumbnail}>
+              <Image src={Thumbnail} alt="Weird Alerts" />
             </div>
             <h2>Development Specs</h2>
             <ul>
@@ -63,9 +68,9 @@ const WeirdAlerts = () => {
               <li>
                 Deciding how much information to display was also an important
                 design decision. Just because an API offers a lot of data
-                points, doesn't mean that each one serves the purpose of the
-                site. I narrowed it down to key data points to reduce consumer
-                overwhelm.
+                points, doesn&apos;t mean that each one serves the purpose of
+                the site. I narrowed it down to key data points to reduce
+                consumer overwhelm.
               </li>
             </ul>
             <h2>Overcoming Challenges</h2>
