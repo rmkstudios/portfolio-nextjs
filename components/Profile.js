@@ -1,5 +1,5 @@
-import mainstyles from "../styles/Main.module.css";
-import styles from "../styles/Profile.module.css";
+import mainstyles from "../styles/Main.module.scss";
+import styles from "../styles/Profile.module.scss";
 import Image from "next/image";
 import Me from "../public/me-min.png";
 import Star from "../public/star.png";
@@ -21,14 +21,14 @@ const Profile = () => {
             10 years of digital
             <br /> marketing experience.
             <div className={styles.tags}>
-              HTML, CSS, Javascript, ReactJS, Next.JS, Typescript, Sass,
+              HTML, CSS, Javascript, ReactJS, Next.JS, Sass, Typescript,
               Wordpress, Bootstrap, Figma, Responsive Websites
             </div>
           </div>
         </div>
       </div>
       <div className={styles.tagsMobile}>
-        HTML, CSS, Javascript, ReactJS, NextJS, Typescript, Sass, Wordpress,
+        HTML, CSS, Javascript, ReactJS, Next.JS, Sass, Typescript, Wordpress,
         Bootstrap, Figma, Storybook
       </div>
     </div>

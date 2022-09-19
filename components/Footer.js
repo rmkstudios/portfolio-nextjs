@@ -1,4 +1,4 @@
-import mainstyles from "../styles/Main.module.css";
+import mainstyles from "../styles/Main.module.scss";
 import Image from "next/image";
 import Heart from "../public/heart.png";
 

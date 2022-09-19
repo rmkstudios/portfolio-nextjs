@@ -1,5 +1,5 @@
-import mainstyles from "../../styles/Main.module.css";
-import styles from "../../styles/Posts.module.css";
+import mainstyles from "../../styles/Main.module.scss";
+import styles from "../../styles/Posts.module.scss";
 import Head from "next/head";
 import { FaShare, FaGithub } from "react-icons/fa";
 import BackToPortfolio from "../../components/BackToPortfolio";

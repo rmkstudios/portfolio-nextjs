@@ -1,4 +1,4 @@
-import styles from "../styles/GreenCurve.module.css";
+import styles from "../styles/GreenCurve.module.scss";
 
 const Header = () => {
   return (

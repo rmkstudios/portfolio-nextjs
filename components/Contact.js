@@ -1,5 +1,5 @@
-import mainstyles from "../styles/Main.module.css";
-import styles from "../styles/Contact.module.css";
+import mainstyles from "../styles/Main.module.scss";
+import styles from "../styles/Contact.module.scss";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import Image from "next/image";

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import mainstyles from "../styles/Main.module.css";
-import styles from "../styles/Header.module.css";
+import mainstyles from "../styles/Main.module.scss";
+import styles from "../styles/Header.module.scss";
 import { FaLinkedin, FaRegFileAlt } from "react-icons/fa";
 
 const Header = () => {

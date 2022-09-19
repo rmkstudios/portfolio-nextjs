@@ -1,5 +1,5 @@
-import mainstyles from "../styles/Main.module.css";
-import styles from "../styles/CaseStudies.module.css";
+import mainstyles from "../styles/Main.module.scss";
+import styles from "../styles/CaseStudies.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import CaseStudy1 from "../public/case-study-1.png";

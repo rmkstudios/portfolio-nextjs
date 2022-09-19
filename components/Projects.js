@@ -1,5 +1,5 @@
-import mainstyles from "../styles/Main.module.css";
-import styles from "../styles/Projects.module.css";
+import mainstyles from "../styles/Main.module.scss";
+import styles from "../styles/Projects.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import Logo1 from "../public/logo-weirdalerts.png";

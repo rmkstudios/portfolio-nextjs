@@ -1,0 +1,35 @@
+@import "mixins";
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.white {
+  color: #fff;
+}
+.footer {
+  min-height: 80px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heart {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* Mobile Responsive CSS */
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .wrapper h2 {
+    font-size: 1rem;
+  }
+}

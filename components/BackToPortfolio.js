@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "/styles/Posts.module.css";
+import styles from "/styles/Posts.module.scss";
 import { BsArrowLeftShort } from "react-icons/bs";
 
 const BackToPortfolio = () => {

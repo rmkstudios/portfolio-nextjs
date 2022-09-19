@@ -1,0 +1,93 @@
+@import "mixins";
+
+.header {
+  width: 100%;
+  color: #fff;
+  padding: 25px 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.logo {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+.logo:hover {
+  color: #8f9cc4;
+}
+.name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.tagline {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.menuItem {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+.menuItem:hover {
+  background-color: $secondary-color;
+}
+.menuHighlight {
+  color: #fff;
+  background-color: $secondary-color;
+  text-decoration: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+.menuHighlight:hover {
+  background-color: $secondary-color-hover;
+}
+.icon {
+  position: relative;
+  top: 2px;
+  margin-right: 4px;
+}
+
+/* Mobile Responsive CSS */
+@media only screen and (max-width: 750px) {
+  .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .tagline {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .tagline {
+    font-size: 0.65rem;
+    font-weight: 300;
+  }
+  .mobileHidden {
+    display: none;
+  }
+  .menu {
+    gap: 10px;
+  }
+  .icon {
+    position: relative;
+    top: 2px;
+    font-size: 1.2rem;
+  }
+}
